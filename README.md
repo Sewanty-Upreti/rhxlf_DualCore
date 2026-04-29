@@ -113,7 +113,7 @@ leapfrog-connect/
 
 ```bash
 # 1. Clone the repo
-git clone <your-repo-url>
+git clone 
 cd leapfrog-connect
 
 # 2. Create and activate virtual environment
