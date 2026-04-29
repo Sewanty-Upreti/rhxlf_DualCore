@@ -134,45 +134,12 @@ Interactive API docs: `http://127.0.0.1:8000/docs`
 
 ---
 
-### Testing the API
 
-#### 1. Create a student profile
-```
-POST http://127.0.0.1:8000/profile/
-Content-Type: application/json
-
-{
-  "name": "Ram Shrestha",
-  "email": "ram@demo.com",
-  "skills": [
-    { "skill_name": "Python", "level": 2 },
-    { "skill_name": "FastAPI", "level": 1 }
-  ],
   "courses": ["Backend Fundamentals", "System Design"]
 }
 ```
 
-Copy the `id` from the response — use it in the next calls.
 
-#### 2. Get readiness score (key endpoint)
-```
-GET http://127.0.0.1:8000/profile/{student_id}/readiness-score
-```
-
-#### 3. Log a skill update (proves growth tracking)
-```
-POST http://127.0.0.1:8000/profile/{student_id}/skill
-Content-Type: application/json
-
-{ "skill_name": "Python", "level": 3 }
-```
-
-#### 4. View full growth journey
-```
-GET http://127.0.0.1:8000/profile/{student_id}/journey
-```
-
----
 
 ## What This System Does That Dashboards Cannot
 
