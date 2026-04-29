@@ -135,12 +135,6 @@ Interactive API docs: `http://127.0.0.1:8000/docs`
 ---
 
 
-  "courses": ["Backend Fundamentals", "System Design"]
-}
-```
-
-
-
 ## What This System Does That Dashboards Cannot
 
 | Weak System | Our System |
